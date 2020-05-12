@@ -10,6 +10,7 @@ viewDirectory = "Views/"
 
 @app.route("/")
 def home():
+    hello = 7
     return render_template("index.html")
     # return "Hello"
 
