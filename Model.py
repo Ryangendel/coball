@@ -1,5 +1,5 @@
 from sqlalchemy import *
-from baseApp import app,db
+from .baseApp import app,db
 
 class ContactForm(db.Model):
     contactId = Column(Integer, primary_key=True)
