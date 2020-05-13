@@ -1,0 +1,65 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Flask - Development", //will drop into a breakpoint locally on vsCode if error encountered
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP" : "C:\\Users\\NT_WIN10\\Desktop\\Coball\\Website\\Controller.py",
+                "FLASK_ENV": "development",
+                "SESSION_COOKIE_NAME" : "Development"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true
+        },
+        {
+            "name": "Python: Flask - QA", //Will display error stack trace on webPage
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP" : "C:\\Users\\NT_WIN10\\Desktop\\Coball\\Website\\Controller.py",
+                "FLASK_ENV": "qa",
+                "FLASK_TESTING" : "True",
+                "FLASK_TRAP_HTTP_EXCEPTIONS" : "True",
+                "SESSION_COOKIE_NAME" : "QA"
+            },
+            "args": [
+                "run",
+            ],
+            "jinja": true
+        },
+        {
+            "name": "Python: Flask - Production", //Will hide error output
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP" : "C:\\Users\\NT_WIN10\\Desktop\\Coball\\Website\\Controller.py",
+                "FLASK_ENV": "production",
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true
+        },
+    ]
+}
