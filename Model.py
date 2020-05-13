@@ -10,4 +10,4 @@ class ContactForm(db.Model):
     phoneNumber = Column(String(45))
     message = Column(String(1000))
 
-db.create_all()
+# db.create_all()
