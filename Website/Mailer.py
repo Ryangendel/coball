@@ -1,9 +1,10 @@
 import smtplib,ssl
+from baseApp import app
 
-smtpHost = ''
-smtpPort = ''
-mailUserName = ''
-mailUserPW = ''
+smtpHost = app.config["SMTP_HOST"]
+smtpPort = app.config["SMTP_PORT"]
+mailUserName = app.config["MAIL_USER"]
+mailUserPW = app.config["MAIL_USER_PW"]
 
 sslContext = ssl.create_default_context()
 
@@ -20,7 +21,7 @@ sslContext = ssl.create_default_context()
 # <h1>This is headline.</h1>
 # """
 class Message():
-    def __init__(self,sender: str = "No-Reply@website.com", receiver: list = ['shawn-hartley@sbcglobal.net'], message: str = None) -> None:
+    def __init__(self,sender: str = "No-Reply@website.com", receiver: list = app.config["ADMIN_MAIL_LIST"], message: str = None) -> None:
         self.sender = sender
         self.receiver = receiver
         self.message = message

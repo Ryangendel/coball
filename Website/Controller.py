@@ -32,7 +32,7 @@ def contact():
             )
             mailer.sendMail(thankYouMessage)
             adminMessage = Message(
-                receiver=['shawn-hartley@sbcglobal.net'],
+                receiver = app.config["ADMIN_MAIL_LIST"],
                 message = f"New Contact from {newContact.firstName} {newContact.lastName}\n{newContact.email}\n{newContact.phoneNumber}\n{newContact.organization}\n{newContact.message}"
             )
             if mailer.sendMail(adminMessage):
