@@ -1,0 +1,44 @@
+import smtplib,ssl
+
+smtpHost = ''
+smtpPort = ''
+mailUserName = ''
+mailUserPW = ''
+
+sslContext = ssl.create_default_context()
+
+
+# message = """From: From Person <from@fromdomain.com>
+# To: To Person <to@todomain.com>
+# MIME-Version: 1.0
+# Content-type: text/html
+# Subject: SMTP HTML e-mail test
+
+# This is an e-mail message to be sent in HTML format
+
+# <b>This is HTML message.</b>
+# <h1>This is headline.</h1>
+# """
+class Message():
+    def __init__(self,sender: str = "No-Reply@website.com", receiver: list(str) = ['shawn-hartley@sbcglobal.net'], message: str = None) -> None:
+        self.sender = sender
+        self.receiver = receiver
+        self.message = message
+        
+
+class Mailer():
+    def __init__(self):
+        self.smtpHost = smtpHost
+        self.smtpPort = smtpPort
+    
+    def sendMail(self,message: Message) -> bool:
+        try:
+            with smtplib.SMTP_SSL(self.smtpHost, self.smtpPort, context=sslContext) as server:
+                server.login(mailUserName, mailUserPW)
+                for recipients in message.receiver:
+                    server.sendmail(message.sender,message.receiver,message.message)
+            return True
+        except Exception as e:
+            print(e)
+            return False
+
