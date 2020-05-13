@@ -20,14 +20,14 @@ sslContext = ssl.create_default_context()
 # <h1>This is headline.</h1>
 # """
 class Message():
-    def __init__(self,sender: str = "No-Reply@website.com", receiver: list(str) = ['shawn-hartley@sbcglobal.net'], message: str = None) -> None:
+    def __init__(self,sender: str = "No-Reply@website.com", receiver: list = ['shawn-hartley@sbcglobal.net'], message: str = None) -> None:
         self.sender = sender
         self.receiver = receiver
         self.message = message
         
 
 class Mailer():
-    def __init__(self):
+    def __init__(self) -> None:
         self.smtpHost = smtpHost
         self.smtpPort = smtpPort
     

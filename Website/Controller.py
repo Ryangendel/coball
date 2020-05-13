@@ -35,12 +35,12 @@ def contact():
                 receiver=['shawn-hartley@sbcglobal.net'],
                 message = f"New Contact from {newContact.firstName} {newContact.lastName}\n{newContact.email}\n{newContact.phoneNumber}\n{newContact.organization}\n{newContact.message}"
             )
-            mailer.sendMail(adminMessage)
-            return render_template("contactResponse.html")
+            if mailer.sendMail(adminMessage):
+                return render_template("contactResponse.html")
+            else:
+                return "Mail ERROR"
         except Exception as e:
             print(e)
-            return "DB ERROR"
-        
-
+            return f"DB Error\n\n {e}"
     else:
         return render_template("contact.html")
