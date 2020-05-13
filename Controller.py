@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from .baseApp import app, db
+from baseApp import app, db
 from .Model import ContactForm
 from .Mailer import *
 
