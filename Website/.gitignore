@@ -1,2 +1,9 @@
 __pycache__
+<<<<<<< HEAD
 testDatabase.db
+=======
+testDatabase.db
+.vscode
+config.py
+.DS_Store
+>>>>>>> a61cc8954d54d195e9d52b2d9af4dfbc8139721c
