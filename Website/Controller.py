@@ -1,18 +1,9 @@
 from flask import Flask, render_template, request
-from Website.Model import connectionInstantiator, ContactForm, contactFormModel
-
-# from Models import IceCreamStore,Sharks, connectionInstatiator
-# from sqlalchemy.orm import sessionmaker, scoped_session
-# import psycopg2
-# from sqlalchemy import create_engine
-
-app = Flask(__name__)
-connectionString ='sqlite:///C:\\Users\\NT_WIN10\\Desktop\\Coball\\Website\\testDatabase.db'
-viewDirectory = "Views/"
+from Website.baseApp import app, db
+from Website.Model import ContactForm
 
 @app.route("/")
 def home():
-    hello = 7
     return render_template("index.html")
 
 @app.route("/Services")
@@ -22,12 +13,8 @@ def services():
 @app.route("/Contact", methods = ['GET','POST'])
 def contact():
     if request.method == 'POST':
-        
-        db = connectionInstantiator(connectionString)
-        # contactTable = ContactFormTable(db.scopedSession)
-        contactTable = ContactForm()
 
-        newContact: contactFormModel = contactFormModel(
+        newContact: ContactForm = ContactForm(
             firstName = request.form["firstName"],
             lastName = request.form["lastName"],
             email = request.form["email"],
@@ -35,9 +22,14 @@ def contact():
             phoneNumber = request.form["phoneNumber"],
             message = request.form["message"]
         )
-        if contactTable.insert(newContact):
+        try:
+            db.session.add(newContact)
+            db.session.commit()
             return render_template("contactResponse.html")
-        else:
+        except Exception as e:
+            print(e)
             return "DB ERROR"
+        
+
     else:
         return render_template("contact.html")
