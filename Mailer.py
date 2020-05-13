@@ -1,5 +1,5 @@
 import smtplib,ssl
-from .baseApp import app
+from baseApp import app
 
 smtpHost = app.config["SMTP_HOST"]
 smtpPort = app.config["SMTP_PORT"]

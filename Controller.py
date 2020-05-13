@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from baseApp import app, db
-from .Model import ContactForm
-from .Mailer import *
+from Model import ContactForm
+from Mailer import *
 
 @app.route("/")
 def home():
