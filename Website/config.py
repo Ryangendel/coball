@@ -1,6 +1,6 @@
 class Config(object):
     DEBUG = True
-    DATABASE_URI = 'sqlite:///C:\\Users\\NT_WIN10\\Desktop\\Coball\\Website\\testDatabase.db'
+    DATABASE_URI = 'sqlite:////Users/ryangendel/Desktop/coball/Website/testDatabase.db'
     SMTP_HOST = ''
     SMTP_PORT = ''
     MAIL_USER = ''
