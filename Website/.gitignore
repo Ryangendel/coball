@@ -1,2 +1,5 @@
 __pycache__
 testDatabase.db
+.vscode
+config.py
+.DS_Store
