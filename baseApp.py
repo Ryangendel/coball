@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from Website.config import Development,Qa,Production
+from config import Development,Qa,Production
 
 app = Flask(__name__)
 
@@ -12,7 +12,7 @@ else:
     app.config.from_object(Production)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = app.config["DATABASE_URI"]
+app.config['SQLALCHEMY_DATABASE_URI'] = app.config["DATABASE_URL"]
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
