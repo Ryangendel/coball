@@ -28,7 +28,7 @@ def contact():
         if app.config['DEBUG']:
             _recipients = app.config["ADMIN_MAIL_LIST"]
         else:
-            _recipients = newContact.email
+            _recipients = [newContact.email]
         
         try:
             db.session.add(newContact)
