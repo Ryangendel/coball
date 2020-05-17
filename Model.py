@@ -1,5 +1,6 @@
 from sqlalchemy import *
 from baseApp import app,db
+from flask_script import Manager
 
 class ContactForm(db.Model):
     contactId = Column(Integer, primary_key=True)
@@ -10,4 +11,4 @@ class ContactForm(db.Model):
     phoneNumber = Column(String(45))
     message = Column(String(1000))
 
-# db.create_all()
+db.create_all()
