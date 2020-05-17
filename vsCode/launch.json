@@ -17,7 +17,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP" : "C:\\Users\\NT_WIN10\\Desktop\\Coball\\Website\\Controller.py",
+                "FLASK_APP" : "${workspaceFolder}/Controller.py",
                 "FLASK_ENV": "development",
                 "SESSION_COOKIE_NAME" : "Development"
             },
@@ -34,7 +34,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP" : "C:\\Users\\NT_WIN10\\Desktop\\Coball\\Website\\Controller.py",
+                "FLASK_APP" : "${workspaceFolder}/Controller.py",
                 "FLASK_ENV": "qa",
                 "FLASK_TESTING" : "True",
                 "FLASK_TRAP_HTTP_EXCEPTIONS" : "True",
@@ -51,7 +51,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP" : "C:\\Users\\NT_WIN10\\Desktop\\Coball\\Website\\Controller.py",
+                "FLASK_APP" : "${workspaceFolder}/Controller.py",
                 "FLASK_ENV": "production",
             },
             "args": [

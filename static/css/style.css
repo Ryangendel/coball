@@ -112,3 +112,21 @@ h1{
   color: black;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+
+canvas.particles-js-canvas-el{
+  background:url("https://i.imgur.com/d5rTE5M.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.landingpageContent{
+  background: rgba(0, 0, 0, .6);
+  height: 200px;
+}
+
+.spacerAbove{
+  line-height: 400%;
+}
