@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from baseApp import app, db
 from Model import ContactForm
-from Mailer import *
+from flask_mail import Mail,Message
 
 @app.route("/")
 def home():
@@ -14,7 +14,8 @@ def services():
 @app.route("/Contact", methods = ['GET','POST'])
 def contact():
     if request.method == 'POST':
-        mailer = Mailer()
+        mailer = Mail(app)
+        _recipients = None
         newContact: ContactForm = ContactForm(
             firstName = request.form["firstName"],
             lastName = request.form["lastName"],
@@ -23,21 +24,30 @@ def contact():
             phoneNumber = request.form["phoneNumber"],
             message = request.form["message"]
         )
+        
+        if app.config['DEBUG']:
+            _recipients = app.config["ADMIN_MAIL_LIST"]
+        else:
+            _recipients = [newContact.email]
+        
         try:
             db.session.add(newContact)
             db.session.commit()
             thankYouMessage = Message(
-                receiver=newContact.email,
-                message = "We got your message"
+                sender=app.config['MAIL_USERNAME'],
+                recipients = _recipients,
+                body = "We got your message"
             )
-            mailer.sendMail(thankYouMessage)
+            mailer.send(thankYouMessage)
             adminMessage = Message(
-                receiver = app.config["ADMIN_MAIL_LIST"],
-                message = f"New Contact from {newContact.firstName} {newContact.lastName}\n{newContact.email}\n{newContact.phoneNumber}\n{newContact.organization}\n{newContact.message}"
+                sender=app.config['MAIL_USERNAME'],
+                recipients = app.config["ADMIN_MAIL_LIST"],
+                body = f"New Contact from {newContact.firstName} {newContact.lastName}\n{newContact.email}\n{newContact.phoneNumber}\n{newContact.organization}\n{newContact.message}"
             )
-            if mailer.sendMail(adminMessage):
+            try:
+                mailer.send(adminMessage)
                 return render_template("contactResponse.html")
-            else:
+            except:
                 return "Mail ERROR"
         except Exception as e:
             print(e)
