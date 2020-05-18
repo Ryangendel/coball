@@ -109,8 +109,8 @@ div.count-particles{
 }
 
 h1{
-  color: black;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  /* color: black; */
+  /* text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey; */
 }
 
 canvas.particles-js-canvas-el{
@@ -129,4 +129,11 @@ canvas.particles-js-canvas-el{
 
 .spacerAbove{
   line-height: 400%;
+}
+
+#mainContent{
+  color:white;
+  font-size: 4.3em;
+  font-family: 'Yantramanav', sans-serif;
+  text-align: center
 }
