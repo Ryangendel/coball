@@ -114,7 +114,7 @@ h1{
 }
 
 canvas.particles-js-canvas-el{
-  background:url("https://i.imgur.com/d5rTE5M.jpg");
+  background:url("/static/img/workstation-vs-server.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
