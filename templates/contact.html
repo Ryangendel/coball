@@ -1,36 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <meta charset="utf-8">
+  <title>Coball solutions</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="/static/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+  <script>
+  var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "10";
+  } else {
+    document.getElementById("navbar").style.top = "-10px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+  </script>
+  
 </head>
-<!-- email
-organization
-phoneNumber
-message -->
+
 <body>
-    <form action="/Contact" method="post">
-        
-        <label for="firstName">First name:</label><br>
-        <input type="text" id="firstName" name="firstName"><br>
-        
-        <label for="lastName">Last name:</label><br>
-        <input type="text" id="lastName" name="lastName"><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email"><br>
-        
-        <label for="organization">Organization:</label><br>
-        <input type="text" id="organization" name="organization"><br>
-        
-        <label for="phoneNumber">Phone Number:</label><br>
-        <input type="text" id="phoneNumber" name="phoneNumber"><br>
-        
-        <label for="message">Message:</label><br>
-        <input type="text" id="message" name="message"><br>
-        
-        <input type="submit" value="Submit">
-      </form> 
+  <!-- <div id="navbar">
+    <a href="/">Home</a>
+    <a href="/Services">Services</a>
+    <a href="/Contact">Contact</a>
+  </div> -->
+<!-- <div class="container-fluid"></div> -->
+  <!-- particles.js container -->
+  <div id="_particles-js">
+    <div id="navbar">
+        <a href="/">Home</a>
+        <a href="/Services">Services</a>
+        <a href="/Contact">Contact</a>
+      </div>
+      <div class="container-fluid">
+    <!-- <h4 class="insertedText">from particles js DIV TESTING FOR A REFRESH</h4> -->
+    <div class="_count-particles">
+        <!-- <div class='container-fluid' style="padding-bottom: 10px;"> -->
+        <form action="/Contact" method="post">
+                <div class="row spacerAbove"></div>
+                <div class="row">
+                  <div class="col-sm-3">
+                  </div>
+                  <div class="col-sm-6 landingpageContent">
+                    <label for="firstName">First name:</label><br>
+                    <input type="text" id="firstName" name="firstName"><br>
+                  </div>
+                  <div class="col-sm-3">
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                    </div>
+                    <div class="col-sm-6 landingpageContent">
+                      <label for="firstName">First name:</label><br>
+                      <input type="text" id="firstName" name="firstName"><br>
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                    </div>
+                    <div class="col-sm-6 landingpageContent">
+                        <label for="lastName">Last name:</label><br>
+                        <input type="text" id="lastName" name="lastName"><br>
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                    </div>
+                    <div class="col-sm-6 landingpageContent">
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email"><br>
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                    </div>
+                    <div class="col-sm-6 landingpageContent">
+                        <label for="organization">Organization:</label><br>
+                        <input type="text" id="organization" name="organization"><br>
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                    </div>
+                    <div class="col-sm-6 landingpageContent">
+                        <label for="phoneNumber">Phone Number:</label><br>
+                        <input type="text" id="phoneNumber" name="phoneNumber"><br>
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                    </div>
+                    <div class="col-sm-6 landingpageContent">
+                        <label for="message">Message:</label><br>
+                        <input type="text" id="message" name="message"><br>
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                    </div>
+                    <div class="col-sm-6 landingpageContent">
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                </div>
+                
+              <!-- </div> -->
+          </form> 
+        <!-- </div> -->
+      </div>
+    </div>
+
+      
+  </div>
+
+  <!-- <div class="container-fluid" style='padding: 25px;'>
+
+    
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Header</h1>
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam
+          placeat repellendus. Repellendus error repellat veritatis recusandae voluptates earum rerum consectetur
+          itaque, ipsam nihil. Alias, nemo.</p>
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+  </div> -->
+
+
+  <!-- scripts -->
+<!-- <script src="/static/javascript/particles.js"></script>
+<script src="/static/javascript/app.js"></script> -->
+
+
 </body>
+<link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </html>
