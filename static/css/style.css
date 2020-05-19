@@ -114,7 +114,7 @@ h1{
 }
 
 canvas.particles-js-canvas-el{
-  background:url("https://i.imgur.com/d5rTE5M.jpg");
+  background:url("/static/img/workstation-vs-server.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -123,8 +123,12 @@ canvas.particles-js-canvas-el{
 }
 
 .landingpageContent{
-  background: rgba(0, 0, 0, .6);
+  padding:7px;
+  background: rgba(3, 1, 1, 0.6);
+  color:#BAFF29;
   height: 200px;
+  font-size:1em;
+  line-height: 1.8em;
 }
 
 .spacerAbove{
@@ -133,7 +137,36 @@ canvas.particles-js-canvas-el{
 
 #mainContent{
   color:white;
-  font-size: 4.3em;
+  font-size: 7em;
   font-family: 'Yantramanav', sans-serif;
-  text-align: center
+  text-align: center;
+  margin-top:14%
+
+}
+
+ /* NAVBAR */
+ #navbar {
+  /* background-color: #333; Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.4s; /* Transition effect when sliding down (and up) */
+  /* background:url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg"); */
+  /* background-color: #333; Black background color */
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: #BAFF29;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  /* color: #BAFF29;
+  background-color: rgb(29, 10, 201); */
+  color: white;
 }
