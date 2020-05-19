@@ -43,7 +43,10 @@ canvas{
    vertical-align:bottom; 
 }
 
-
+.colCentered{
+  float: none;
+  margin: 0 auto;
+}
 /* ---- stats.js ---- */
 
 .count-particles{
@@ -127,7 +130,7 @@ canvas.particles-js-canvas-el{
   padding:7px;
   background: rgba(3, 1, 1, 0.6);
   color:#BAFF29;
-  height: 200px;
+  height: auto;
   font-size:1em;
   line-height: 1.8em;
 }
@@ -136,12 +139,12 @@ canvas.particles-js-canvas-el{
   line-height: 400%;
 }
 
-#mainContent{
+.mainContent{
   color:white;
   font-size: 7em;
   font-family: 'Yantramanav', sans-serif;
   text-align: center;
-  margin-top:14%
+  /* margin-top:14% */
 
 }
 

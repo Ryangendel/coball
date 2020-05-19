@@ -4,12 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Coball solutions</title>
-  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="/static/css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" media="screen" href="/static/css/style.css">
   <script>
   var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -27,95 +26,67 @@ window.onscroll = function() {
 </head>
 
 <body>
-  <!-- <div id="navbar">
-    <a href="/">Home</a>
-    <a href="/Services">Services</a>
-    <a href="/Contact">Contact</a>
-  </div> -->
-<!-- <div class="container-fluid"></div> -->
-  <!-- particles.js container -->
-
     <div id="navbar">
         <a href="/">Home</a>
         <a href="/Services">Services</a>
         <a href="/Contact">Contact</a>
-      </div>
+    </div>
+
+  <div id="particles-js">
+    <div class="count-particles">
     <div class="container-fluid">
-    <!-- <h4 class="insertedText">from particles js DIV TESTING FOR A REFRESH</h4> -->
-        <!-- <div class='container-fluid' style="padding-bottom: 10px;"> -->
         <form action="/Contact" method="post">
                 <div class="row spacerAbove"></div>
-
-
                 <div class="row">
-
-                    <div class="col-sm-6 landingpageContent">
+                    <div class="col-sm-6 colCentered landingpageContent">
                       <label for="firstName">First name:</label><br>
                       <input type="text" id="firstName" name="firstName"><br>
                     </div>
-
                 </div>
-
                 <div class="row">
-                    <div class="col-sm-6 landingpageContent">
+                    <div class="col-sm-6 colCentered landingpageContent">
                         <label for="lastName">Last name:</label><br>
                         <input type="text" id="lastName" name="lastName"><br>
                     </div>
-
                 </div>
-
                 <div class="row">
-
-                    <div class="col-sm-6 landingpageContent">
+                    <div class="col-sm-6 colCentered landingpageContent">
                         <label for="email">Email:</label><br>
                         <input type="text" id="email" name="email"><br>
                     </div>
-
                 </div>
-
                 <div class="row">
-
-                    <div class="col-sm-6 landingpageContent">
+                    <div class="col-sm-6 colCentered landingpageContent">
                         <label for="organization">Organization:</label><br>
                         <input type="text" id="organization" name="organization"><br>
                     </div>
-
                 </div>
-
                 <div class="row">
-
-                    <div class="col-sm-6 landingpageContent">
+                    <div class="col-sm-6 colCentered landingpageContent">
                         <label for="phoneNumber">Phone Number:</label><br>
                         <input type="text" id="phoneNumber" name="phoneNumber"><br>
                     </div>
-
                 </div>
-
                 <div class="row">
-
-                    <div class="col-sm-6 landingpageContent">
+                    <div class="col-sm-6 colCentered landingpageContent">
                         <label for="message">Message:</label><br>
                         <input type="text" id="message" name="message"><br>
                     </div>
-
                 </div>
-
                 <div class="row">
-
-                    <div class="col-sm-6 landingpageContent">
+                    <div class="col-sm-6 colCentered landingpageContent">
                         <input type="submit" value="Submit">
                     </div>
-
                 </div>
-                
           </form> 
       </div>
-    
-
+    </div>
+  </div>
       
+  <script src="/static/javascript/particles.js"></script>
+  <script src="/static/javascript/app.js"></script>
 
-
-  <!-- <div class="container-fluid" style='padding: 25px;'>
+  <footer class="panel" style='padding: 25px;'>
 
     
     <div class="row">
@@ -136,7 +107,7 @@ window.onscroll = function() {
       <div class="col-sm-3">
       </div>
     </div>
-  </div> -->
+  </footer>
 
 
 
