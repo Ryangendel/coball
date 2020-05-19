@@ -39,8 +39,8 @@ body{
 }
 
 canvas{
-  display:block;
-  vertical-align:bottom;
+   display:block; 
+   vertical-align:bottom; 
 }
 
 
@@ -90,11 +90,11 @@ canvas{
   width: 100%;
   height: 100%;
   background-color:rgb(16, 20, 22);
-  background-image: url('');
+  /* background-image: url(''); */
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-}
+} */
 
 h4{
   background:blue;
@@ -120,6 +120,7 @@ canvas.particles-js-canvas-el{
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
+  padding: 25px 50px 75px 100px;
 }
 
 .landingpageContent{
@@ -148,6 +149,7 @@ canvas.particles-js-canvas-el{
  #navbar {
   /* background-color: #333; Black background color */
   position: fixed; /* Make it stick/fixed */
+  z-index:10;
   top: 0; /* Stay on top */
   width: 100%; /* Full width */
   transition: top 0.4s; /* Transition effect when sliding down (and up) */
