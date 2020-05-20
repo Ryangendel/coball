@@ -54,3 +54,7 @@ def contact():
             return f"DB Error\n\n {e}"
     else:
         return render_template("contact.html")
+
+@app.route("/Rollman")
+def rollMan():
+    return render_template("rollMan.html")
