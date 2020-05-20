@@ -128,7 +128,8 @@ canvas.particles-js-canvas-el{
 }
 
 .landingpageContent{
-  padding:7px;
+  margin-top: 30px;
+  padding:10px;
   background: rgba(3, 1, 1, 0.6);
   color:#BAFF29;
   height: auto;
@@ -144,7 +145,7 @@ canvas.particles-js-canvas-el{
 
 .mainContent{
   color:white;
-  /* font-size: 7em; */
+  font-size: 7em;
   font-family: 'Yantramanav', sans-serif;
   text-align: center;
   /* margin-top:14% */
