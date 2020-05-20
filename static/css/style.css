@@ -124,7 +124,7 @@ canvas.particles-js-canvas-el{
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
-  padding: 25px 50px 75px 100px;
+  padding: 25px 75px 75px 100px;
 }
 
 .landingpageContent{
@@ -139,7 +139,7 @@ canvas.particles-js-canvas-el{
 }
 
 .spacerAbove{
-  line-height: 400%;
+  margin-top: 100px;
 }
 
 .mainContent{
@@ -167,14 +167,14 @@ canvas.particles-js-canvas-el{
 #navbar a {
   float: right;
   display: block;
-  color: #BAFF29;
+  color: white;
   text-align: center;
   padding: 30px;
   text-decoration: none;
 }
 
 #navbar a:hover {
-  /* color: #BAFF29;
-  background-color: rgb(29, 10, 201); */
-  color: white;
+   color: #BAFF29;
+  /* background-color: rgb(29, 10, 201);  */
+  /* color: white; */
 }
