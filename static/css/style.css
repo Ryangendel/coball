@@ -235,11 +235,12 @@ a:visited {
   color: inherit;
 }
 
-div.container.test{
-  padding-top:50px
+.gridContainer{
+  /* margin-top:50px; */
+ padding:10px;
 }
 
-.container .test {
+.container .gridContainer {
   padding-top:50px;
   margin: 3em 0;
   display: grid;
@@ -277,6 +278,7 @@ ul.mosaic li.tile a {
 }
 ul.mosaic li.text a {
   padding: 2em;
+  background-color:lightgray;
 }
 ul.mosaic li.text a h4 {
   display: table-cell;
