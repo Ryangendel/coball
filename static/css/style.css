@@ -292,10 +292,10 @@ ul.mosaic li.text a .meta {
 }
 ul.mosaic li.text a .meta span.upcase {
   font-weight: 700;
-  color: #ec7800;
+  color: #BAFF29;
 }
 ul.mosaic li.text a:hover {
-  background: #ec7800;
+  background: #BAFF29;
   color: #ffffff;
 }
 ul.mosaic li.text a:hover .meta .upcase {
@@ -347,7 +347,7 @@ ul.mosaic li.video a figure:hover img {
 ul.mosaic li.image a figure:hover figcaption,
 ul.mosaic li.video a figure:hover figcaption {
   opacity: 1;
-  background: rgba(236, 120, 0, 0.7);
+  background: rgba(188, 255, 44, 0.7);
   transform: scale(1);
 }
 
