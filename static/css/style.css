@@ -218,6 +218,12 @@ canvas.particles-js-canvas-el{
   /* color: white; */
 }
 
+#introText1{
+  color: #BAFF29;
+  font-size: 2.3em;
+
+  text-align: center;
+}
 
 /* START */
 body {
