@@ -15,12 +15,13 @@
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "10";
+    document.getElementById("navbar").style.top = "-10px";
   } else {
-    document.getElementById("navbar").style.top = "-20px";
+    document.getElementById("navbar").style.top = "-30px";
   }
   prevScrollpos = currentScrollPos;
 }
+
 
   </script>
 </head>
@@ -30,9 +31,11 @@ window.onscroll = function() {
     <a href="/">Home</a>
     <a href="/Services">Services</a>
     <a href="/Contact">Contact</a>
+    <img class="logoHeader" src="../static/img/logoCSG.png">
   </div>
 
   <div id="particles-js">
+    <!-- <canvas class="particles-js-canvas-el" width="1903" height="952" style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;"></canvas> -->
     <div class="count-particles">
       <div class="container-fluid">
         <div class="row spacerAbove"></div>
@@ -42,11 +45,13 @@ window.onscroll = function() {
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6 colCentered landingpageContent">
+          <div class="col-lg-8 col-sm-12 colCentered landingpageContent">
             <p>COBOL software upgrades, development, support, maintenance, and deliverables.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam
-              placeat repellendus. Repellendus error repellat veritatis recusandae voluptates earum rerum consectetur
-              itaque, ipsam nihil. Alias, nemo.</p>
+              placeat repellendus. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam
+              placeat repellendus. ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam
+              placeat repellendu </p>
           </div>
         </div>
       </div>
@@ -57,22 +62,132 @@ window.onscroll = function() {
   <script src="/static/javascript/particles.js"></script>
   <script src="/static/javascript/app.js"></script>
 
-  <footer class="footer" style='padding: 25px;'>
-    <div class="container">
+
+  <div class="shortCopy">
+    <div class="container intoCopy">
+      <div class="row">
+        
+        <img class="logo" src="../static/img/logoCSG.png">
+        <div class="box1"></div>
+      </div>
         <div class="row">
           <div class="col-sm-12">
-            <h1>Footer</h1>
+            <h1>Problems</h1>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6 colCentered">
+        <div class="row ">
+          <div class="col-md-4">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam
               placeat repellendus. Repellendus error repellat veritatis recusandae voluptates earum rerum consectetur
               itaque, ipsam nihil. Alias, nemo.</p>
           </div>
+        <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam
+              placeat repellendus. Repellendus error repellat veritatis recusandae voluptates earum rerum consectetur
+              itaque, ipsam nihil. Alias, nemo.</p>
+          </div>
+          <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam
+              placeat repellendus. Repellendus error repellat veritatis recusandae voluptates earum rerum consectetur
+              itaque, ipsam nihil. Alias, nemo.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ------------- -->
+  <div class="container test">
+    <ul class="mosaic">
+      <li class="tile text">
+        <a href="#">
+          <div class="meta">
+            <span class="upcase">CSS</span> / solutions
+          </div>
+          <h4 class="sans">How to create  a mosaic layout?</h4>
+        </a>
+      </li>
+      <li class="tile image">
+        <a href="#">
+          <figure>
+            <img src="https://vignette.wikia.nocookie.net/creepypasta/images/0/05/Doge.png/revision/latest?cb=20140911192341&path-prefix=es" alt="">
+            <figcaption>
+              <span>So flexbox.</span>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      <li class="tile text">
+        <a href="#">
+          <div class="meta">
+            <span class="upcase">CSS</span> / css magic
+          </div>
+          <h4 class="sans">My Crash course into flexbox</h4>
+        </a>
+      </li>
+      <li class="tile video">
+        <a href="#">
+          <figure>
+            <img src="https://www.serviceseeking.com.au/blog/wp-content/uploads/2016/08/videographer.jpeg" alt="">
+            <figcaption><i class="fa fa-play"></i></figcaption>
+          </figure>
+        </a>
+      </li>
+      <li class="tile image">
+        <a href="#">
+          <figure>
+            <img src="https://xgttx.files.wordpress.com/2013/11/e6b0b4e7aaaa.jpg" alt="">
+            <figcaption>
+              <span>Feeling summer rain.</span>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      <li class="tile text">
+        <a href="#">
+          <div class="meta">
+            <span class="upcase">IDEAS</span> / solutions
+          </div>
+          <h4 class="sans">What if I use css grid for positioning?</h4>
+        </a>
+      </li>
+      <li class="tile text">
+        <a href="#">
+          <div class="meta">
+            <span class="upcase">IDEAS</span> / ie sucks
+          </div>
+          <h4 class="sans">But should I care about old browsers?</h4>
+        </a>
+      </li>
+      <li class="tile video">
+        <a href="#">
+          <figure>
+            <img src="https://unsplash.it/360/360?random" alt="">
+            <figcaption><i class="fa fa-play"></i></figcaption>
+          </figure>
+        </a>
+      </li>
+    </ul>
+  </div>
+   <!-- ------------- -->
+
+  <footer class="infoFrontPage" style='padding: 25px;'>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1></h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 footer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam
+              placeat repellendus. Repellendus error repellat veritatis recusandae voluptates 
+              itaque</p>
+          </div>
         </div>
     </div>
   </footer>
+
 </body>
 <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </html>

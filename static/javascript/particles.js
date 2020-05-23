@@ -196,7 +196,8 @@ var pJS = function(tag_id, params){
     if(pJS && pJS.interactivity.events.resize){
 
       window.addEventListener('resize', function(){
-
+        console.log("your in me")
+        console.log(pJS.canvas.el.offsetWidth)
           pJS.canvas.w = pJS.canvas.el.offsetWidth;
           pJS.canvas.h = pJS.canvas.el.offsetHeight;
 
