@@ -165,10 +165,10 @@ canvas.particles-js-canvas-el{
 
 .mainContent{
   color:white;
-  font-size: 7em;
+  font-size: 5.5em;
   font-family: 'Yantramanav', sans-serif;
   text-align: center;
-  /* margin-top:14% */
+  margin-top:10%
 }
 
 .box1{
